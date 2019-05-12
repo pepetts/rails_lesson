@@ -1,0 +1,7 @@
+<h1>show.html</h1>
+<p>
+  <%= @post.content %>
+  <br>
+  <%= @post.created_at %>
+</p>
+<%= link_to("編集","/post/#{@post.id}/edit") %>

@@ -1,0 +1,8 @@
+<h1>Post一覧</h1>
+
+<% @posts.each do |post| %>
+  <p>
+    <%= link_to(post.content,"/post/#{post.id}") %>
+    <%= post.created_at %>
+  </p>
+<% end %>
